@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { styled, alpha } from "@mui/material/styles";
+import SearchEntityTable from "../components/SearchEntityTable";
 
 const StyledMenu = styled((props: MenuProps) => (
   <Menu
@@ -59,6 +60,7 @@ const SearchEntity = () => {
   };
 
   return (
+    <>
     <Box>
       <Box>
         <Breadcrumbs aria-label="breadcrumb">
@@ -177,6 +179,10 @@ const SearchEntity = () => {
         </Box>
       </Box>
     </Box>
+    <Box>
+        <SearchEntityTable />
+    </Box>
+ </>
   );
 };
 
